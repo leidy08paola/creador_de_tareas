@@ -1,9 +1,10 @@
 {
-  "name": "platzi-intro-react-base",
+  "name": "Curso-react-intro",
   "version": "0.1.0",
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -28,5 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0"
   }
 }

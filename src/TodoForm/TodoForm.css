@@ -1,0 +1,113 @@
+
+.Modal {
+    width: 30rem;
+    height: 17rem;
+    background-color: #BFE2FF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 2rem;
+    margin: 3rem auto;
+    display: block;
+    padding: 1.3rem;
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    left: 0rem;
+    z-index: 1;
+}
+
+label {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: rgb(80, 82, 81);
+    background-color:#eef5fa;
+    border-radius: 1rem 0;
+    width: 13rem;
+}
+
+
+.alert--active{
+    color: white;
+    background-color: red;
+    font-size: 0.2rem;
+    margin:0.5rem auto;
+    font-weight: bold;
+    width: 10rem;
+    text-align: center;
+}
+
+.textarea__modal{
+    display: block;
+    min-width: 25rem;
+    height: 6rem;
+    margin: 0.5rem auto 1rem;
+    padding: 0.6rem;
+    border-style: hidden;
+    font-size: 1.1rem;
+    font-weight: 300;
+    resize: none;
+
+    &:focus{
+        outline-color: #BFE2FF;
+    }
+}
+
+.modal__div__button__container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto;
+    gap: 2rem;
+/*     left: 0;
+    width: 100%;
+    height: 6.5rem;
+    border-radius: 0 0 2rem 2rem;
+    */
+}
+
+.modal__div__button {
+    background-color: #00B026;
+    width: 7rem;
+    height: 2.5rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 0 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: #b2c481;
+        color: rgb(37, 37, 37);
+        box-shadow: rgba(0, 0, 0, 0.15) -2.6px -1.95px 1.95px ;
+    }
+
+    &:active{
+        transform: translateY(4px);
+    }
+}
+
+.clean {
+    background-color: rgb(151, 30, 30);
+
+    &:hover{
+        background-color: rgb(245, 155, 155);
+    }
+}
+
+.button__close {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 1rem 0.5rem 0 27rem;
+    top: -2rem;
+    position: absolute;
+
+    &:active{
+        background-color: #ee8b84;
+    }
+}

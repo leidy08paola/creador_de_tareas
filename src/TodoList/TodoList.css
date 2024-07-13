@@ -1,0 +1,16 @@
+.todo-list-container {
+
+    width: 600px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    background-color: aqua;
+  }
+
+.todo-list {
+     justify-content: right;
+    margin: 0;
+    padding: 0 0 56px 0;
+   
+    
+  }
+  

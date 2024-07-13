@@ -1,0 +1,138 @@
+const [searchValue, setSearchValue]= React.useState();   // es una funcion el estado se consume y se actualiza
+el primer elemento que recibimo del array es el estdo
+el estado de react es inmutable y lo que se necesecita es una funcion controladora y actualizadora del estado 
+el segundo por convencion es setState
+
+useState('')  // valor inicial cuando renderisemos por primera vez lo que necesitemos  este estado lo comunicamos con el input de los usuarios
+value={searchValue} // yo quiero que el valor este conectado con el input de  los usuarios , la propiedad value de los inputs voy a decirle que este conectado voy a decirle que sea igual a ese estado que acabamos de 
+
+setSearchValue( event.target.value) = funcion actualizadora del estado tenemos que decirles cual es el nuevo valor que vamos a guardar en el estado , en este caso el  valor que los usuarios escribieron ,, y se aguade una y otra vez en el estado de react
+// con esta instruciion ya se puede guardar el valor que escribieron los usuarios en el estado
+
+searchValue = aui se almacena  el valor que el usuario escriba
+
+
+lo que hacen los estados es volver a renderiazar los componentes estos es lo que comunican los estados a render
+
+
+El hook useState retorna una array con dos posiciones, 
+el primero valor del estado y el segundo su actualizador (por convención empieza por set).
+
+
+
+____________________________________
+
+Contando todos
+
+como se epueden comunicar componentes padres con componentes hijos :->
+solo se comunicas componetes de padres a hijos 
+
+se convinan con props ,  y se reciben los estados como props
+
+
+vamos hacer un nuevo estado de todos  con el array de todos ->
+const [todos , setTodos] = React.useState
+(defaultTodos); // estado inicial ->  ahora pueden cambiar gracias a  este estado
+
+
+-- ya todos los componentes pueden acceder al ese estado
+del todosearch gracias a que  movimos el estado al componente app
+y por medio de props lo podemos enviar ya no solamente al todo search si no al cualquier componente que queramos
+
+
+y ahora vamos hacer un nuevo estado 
+
+----- estados derivados ___
+
+son variables propiedades , calculos  que hacemos apartir de un estado , 
+recuaerda que los estados pueden cambiar todo el tiempo
+las propiedades vengas tal cual de nuestro estdo
+
+en este caso necesitamos dos cosas : se creea una variable con los todos completados
+y otra con la cantidada total del todo y como hacemos ese calculo:
+el calculo se hace basandose en el estado ,, con ma panipulacion de array con javascript ___ "todos.filter"
+
+const completedTodos = todos.filter(
+  todo => !!todo.completed
+).length; -> estado derivado
+
+const totalTodos = todos.length; -> otro estado derivado para contar los todos
+
+
+_____________________________________________
+Buscando todos
+
+vamos a crear un nuevo estado derivado .
+
+const searchedTodos = todos.filter(
+    (todo) => {
+      const todoText = todo.text.toLowerCase();
+      const searchText = searchValue.toLowerCase
+      ();
+       return todo.text.includes(searchText)
+    }
+  ) /// CON ESTO PODEMOS BUSCAR y con los metodos podemos filtar mayuculas y minusculas sin problema
+   _______________________________________________
+
+   completando y eliominando todos
+
+   lo que podemos hacer es : enviar el estado y actualizador del estado:
+
+   pero hay otra forma no se envia tal cual
+
+
+     onClick={props.onComplete} -> este es el evento que se le va a apasar para  que entoenda la logiva realisasda en el componenete app
+      manupulacion de arrays // 
+
+      const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text == text
+    );
+     newTodos[todoIndex].completed = true;
+    setTodos(newTodos);
+   };
+
+   // esta es una funcion que espera recibir un aprametro
+   con el texto con que vamos a aver cual todo completar o no
+
+    onComplete={()=> completeTodo(todo.
+            text)} ---------> los eventos necesitan un afuncion unicamente cuanto ocurra el evento
+            y se encapsula la funcion  en otra funcion y espera el evento
+_____________________________-
+eliminando todos
+
+se crea una funcion 
+
+
+
+const deleteTodo = (text) => { // texto para indentificar cual todo queremos borrar
+    const newTodos = [...todos];  // crear  nueva lista de todos
+    const todoIndex = newTodos.findIndex( // identificar cual es el todo que queremos modificar
+      (todo) => todo.text == text
+    );
+     newTodos.splice(todoIndex,1) // accedemos por indice y metodo splice manipulacion de array
+    setTodos(newTodos);
+   };
+
+
+   _____________________________________________
+
+   Iconos en React: librerías y SVG
+
+   Installation (for standard modern project)
+
+   npm install react-icons --save
+
+   import { FaBeer } from 'react-icons/fa';
+
+class Question extends React.Component {
+  render() {
+    return <h3> Lets go for a <FaBeer />? </h3>
+  }
+}
+
+
+
+
+
