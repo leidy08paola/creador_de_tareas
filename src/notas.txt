@@ -31,6 +31,7 @@ se convinan con props ,  y se reciben los estados como props
 
 
 vamos hacer un nuevo estado de todos  con el array de todos ->
+
 const [todos , setTodos] = React.useState
 (defaultTodos); // estado inicial ->  ahora pueden cambiar gracias a  este estado
 

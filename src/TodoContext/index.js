@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
-const TodoContext = React.createContext();
+const TodoContext = React.createContext(); // creo el contexto ...
 
 function TodoProvider({ children }) {
   const {
