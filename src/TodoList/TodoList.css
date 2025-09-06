@@ -1,9 +1,10 @@
 .todo-list-container {
 
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: center; /* Centra horizontalmente los elementos */
     background-color: aqua;
+    margin-left: 600px;
   }
 
 .todo-list {

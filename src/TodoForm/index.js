@@ -44,7 +44,7 @@ function TodoForm() {
     }
 
     return(
-        <form onSubmit={onSubmit}>
+        <form  className="todo-form" onSubmit={onSubmit}>
             <button 
                 className='button__close'
                 onClick={onClose}

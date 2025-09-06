@@ -8,11 +8,13 @@
     justify-content: left; /* Esto centrará horizontalmente el input */
   }
   .todo-search-input{
+    width: 30%;
+    height: 10px;
     border: 2px solid #50428C;
     font-Size: 20PX;
     text-Align: center;
     align-items: center;
-    margin: 0 ;
+   margin-left: 7gir00px;
     padding: 20px;
     color:black;
     background: #FFFFFF;

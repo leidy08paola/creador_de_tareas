@@ -1,0 +1,17 @@
+
+/* Contenedor del modal */
+.Modal {
+    width: 30rem;                   /* ancho del modal */
+    height: 17rem;                  /* alto del modal */
+    background-color:#00B026;       /* color de fondo */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; /* sombra */
+    border-radius: 2rem;            /* bordes redondeados */
+    padding: 1.3rem;                /* espacio interno */
+
+    position: absolute;             /* lo posicionamos respecto a la pantalla */
+    top: 3rem;                      /* distancia desde arriba */
+    right: 2rem;                    /* distancia desde la derecha */
+    /* left: 0rem; ❌ ya no lo usamos porque queremos control lateral */
+    
+    z-index: 1000;                  /* encima de todo */
+}

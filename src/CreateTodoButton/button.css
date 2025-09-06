@@ -1,0 +1,28 @@
+.container_CreateTodoButton {
+  position: fixed;        /* Botón flotante */
+  bottom: 30px;           /* Pegado al fondo */
+  right: 30px;            /* Pegado a la derecha */
+  z-index: 1000;          /* Encima de todo */
+}
+
+.CreateTodoButton {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Degradado bonito */
+  color: white;
+  border: none;
+  border-radius: 50%;     /* Botón redondo */
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;        /* El "+" bien grande */
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+  transition: all 0.3s ease;
+}
+
+.CreateTodoButton:hover {
+  transform: scale(1.1) rotate(15deg); /* Animación hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.CreateTodoButton:active {
+  transform: scale(0.95); /* Al presionar se achica */
+}

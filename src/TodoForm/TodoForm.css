@@ -1,31 +1,18 @@
 
-.Modal {
-    width: 30rem;
-    height: 17rem;
-    background-color: #BFE2FF;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    border-radius: 2rem;
-    margin: 3rem auto;
-    display: block;
-    padding: 1.3rem;
-    position: absolute;
-    top: 3rem;
-    right: 0rem;
-    left: 0rem;
-    z-index: 1;
+
+
+.todo-form {
+  position: fixed; /* lo hace flotar en la ventana */
+  top: 200px;       /* distancia desde arriba */
+  left: 20%;       /* lo mueve hacia la derecha */
+  transform: translateX(-50%); /* lo centra en su posición */
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999; /* se asegura de estar encima */
 }
 
-label {
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-weight: 800;
-    font-size: 1.4rem;
-    color: rgb(80, 82, 81);
-    background-color:#eef5fa;
-    border-radius: 1rem 0;
-    width: 13rem;
-}
 
 
 .alert--active{
@@ -39,6 +26,7 @@ label {
 }
 
 .textarea__modal{
+   
     display: block;
     min-width: 25rem;
     height: 6rem;
@@ -54,7 +42,10 @@ label {
     }
 }
 
+
+
 .modal__div__button__container {
+    background-color: #00B026;  /* probando cambion*/
     display: flex;
     justify-content: center;
     margin: 1.5rem auto;
@@ -103,10 +94,7 @@ label {
     height: 2.5rem;
     font-size: 1.5rem;
     padding: 0;
-    margin: 1rem 0.5rem 0 27rem;
-    top: -2rem;
-    position: absolute;
-
+    
     &:active{
         background-color: #ee8b84;
     }

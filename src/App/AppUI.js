@@ -10,7 +10,7 @@ import {CreateTodoButton } from '../CreateTodoButton/index.js'
 import { Modal } from '../Modal/index.js';
 import { TodoForm } from '../TodoForm/index.js';
 import { TodoContext } from '../TodoContext/index.js';
-
+import './app.css'
 
 function AppUI () { 
   const {
