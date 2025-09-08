@@ -51,7 +51,7 @@ function TodoForm() {
             >
             x 
             </button>
-            <label htmlFor='newAddTodo'>ADD TO DO</label>
+            <label htmlFor='newAddTodo'> 💚 💚💚 💚💚💚 💚</label>
             {repeatedElement}
             <textarea
                 className='textarea__modal' 

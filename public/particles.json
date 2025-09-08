@@ -1,0 +1,31 @@
+{
+  "background": {
+    "color": "#000000"
+  },
+  "particles": {
+    "number": {
+      "value": 80
+    },
+    "size": {
+      "value": 3
+    },
+    "color": {
+      "value": "#00ffcc"
+    },
+    "links": {
+      "enable": true,
+      "distance": 150,
+      "color": "#00ffcc",
+      "opacity": 0.5,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "outModes": {
+        "default": "bounce"
+      }
+    }
+  }
+}

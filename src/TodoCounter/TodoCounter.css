@@ -1,10 +1,14 @@
 .TodoCounter{
+    background-color: #404040;
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid #00ffcc; /* línea continua */
+    margin-top: 50px;
     font-Size: 30PX;
     text-Align:center;
-    margin: 0 ;
-    padding: 48px;
-    color:red;
-    background: #FFFFFF;
+    margin-left: 250px;
+    padding: 10px;
+    color:#F2F2F2;
     opacity: 0.5;
     
    }

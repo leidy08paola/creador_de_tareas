@@ -16,8 +16,8 @@ function CreateTodoButton({ setOpenModal }) {
       }}
     >
       <p>
-      +
-
+      
+ 💚Crear Tarea
       </p>
     </button>
     </div>

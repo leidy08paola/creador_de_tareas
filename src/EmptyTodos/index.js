@@ -4,7 +4,10 @@ import './EmptyTodos.css';
 function EmptyTodos() {
   return (
     <>
-     crear
+     <div className="empty-todos">
+  🌙 Empieza tu día organizando tus tareas ✨
+</div>
+
     </>
   );
 }

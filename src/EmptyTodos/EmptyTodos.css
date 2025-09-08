@@ -1,0 +1,14 @@
+.empty-todos {
+  background:#BFBFBF;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Borde con opacidad */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  margin: 20px auto;
+  margin-right: 50px;
+  width: 90%;
+  text-align: center;
+  color: #F2F2F2; /* Texto blanco para el estilo dark */
+  font-size: 1.2rem;
+  backdrop-filter: blur(6px); /* Efecto glassmorphism */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}

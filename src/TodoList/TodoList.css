@@ -1,17 +1,34 @@
-.todo-list-container {
+/* Canvas de partículas */
+#particles-js, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* siempre detrás */
+}
 
-    width: 500px;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    background-color: aqua;
-    margin-left: 600px;
-  }
+/* Tu contenedor de lista */
+.todo-list-container {
+  background-color: #404040;
+  width: 35%;
+  max-width: 600px;
+  height: auto; /* crecerá con la lista */
+  display: flex;
+  align-items: center;
+  position: relative; /* necesario para z-index */
+  z-index: 1; /* encima del canvas */
+  margin: 0 auto; /* centra horizontalmente */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+  justify-content: center;
+  margin-left: 700px;
+  margin-top: 20px;
+}
 
 .todo-list {
-     justify-content: right;
-    margin: 0;
-    padding: 0 0 56px 0;
-   
-    
-  }
-  
+  justify-content: right;
+  margin: 0;
+  padding: 0 0 56px 0;
+}

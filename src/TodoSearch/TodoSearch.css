@@ -5,19 +5,20 @@
 .todo-search-container {
     
     display: flex;
-    justify-content: left; /* Esto centrará horizontalmente el input */
+    margin-left: 200px;
+    margin-top: 80px;
   }
   .todo-search-input{
-    width: 30%;
+    width: 40%;
     height: 10px;
-    border: 2px solid #50428C;
+    border: 2px solid #00ffcc;
     font-Size: 20PX;
     text-Align: center;
     align-items: center;
-   margin-left: 7gir00px;
+    margin-left: 500px;
     padding: 20px;
     color:black;
-    background: #FFFFFF;
+    background: #BFBFBF;
     opacity: 0.5;
     
 }

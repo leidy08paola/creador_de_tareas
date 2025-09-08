@@ -1,28 +1,49 @@
 .container_CreateTodoButton {
-  position: fixed;        /* Botón flotante */
-  bottom: 30px;           /* Pegado al fondo */
-  right: 30px;            /* Pegado a la derecha */
-  z-index: 1000;          /* Encima de todo */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
 }
 
 .CreateTodoButton {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Degradado bonito */
-  color: white;
-  border: none;
-  border-radius: 50%;     /* Botón redondo */
-  width: 60px;
-  height: 60px;
-  font-size: 2rem;        /* El "+" bien grande */
+  background: transparent;
+  border: 2px solid #00ffcc;
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 15px 150px;
+  margin-right: 715px;
+  margin-bottom: 300px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffcc;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px rgba(0, 255, 204, 0.4);
   transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+  backdrop-filter: blur(5px); /* efecto glassmorphism */
+  background: rgba(0, 0, 0, 0.4); /* fondo translúcido */
 }
 
+/* Hover */
 .CreateTodoButton:hover {
-  transform: scale(1.1) rotate(15deg); /* Animación hover */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffcc, 0 0 50px rgba(0, 255, 204, 0.7);
+  background: rgba(0, 255, 204, 0.1);
 }
 
+/* Active */
 .CreateTodoButton:active {
-  transform: scale(0.95); /* Al presionar se achica */
+  transform: scale(0.95);
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px rgba(0, 255, 204, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px #00ffcc, 0 0 60px rgba(0, 255, 204, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px rgba(0, 255, 204, 0.4);
+  }
 }

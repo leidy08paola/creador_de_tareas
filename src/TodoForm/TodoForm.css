@@ -3,11 +3,12 @@
 
 .todo-form {
   position: fixed; /* lo hace flotar en la ventana */
-  top: 200px;       /* distancia desde arriba */
-  left: 20%;       /* lo mueve hacia la derecha */
+  top: 350px;      
+  left: 28%;      
   transform: translateX(-50%); /* lo centra en su posición */
-  background: white;
+  background: #404040;
   border-radius: 12px;
+  border: 2px solid #00ffcc; /* línea continua */
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   z-index: 9999; /* se asegura de estar encima */
@@ -38,14 +39,14 @@
     resize: none;
 
     &:focus{
-        outline-color: #BFE2FF;
+        outline-color: #8C8C8C;
     }
 }
 
 
 
 .modal__div__button__container {
-    background-color: #00B026;  /* probando cambion*/
+  
     display: flex;
     justify-content: center;
     margin: 1.5rem auto;
@@ -58,10 +59,10 @@
 }
 
 .modal__div__button {
-    background-color: #00B026;
+    background-color:#404040 ;
     width: 7rem;
     height: 2.5rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     text-align: center;
     padding: 0.6rem;
@@ -71,7 +72,7 @@
     transition: all 0.3s ease;
 
     &:hover{
-        background-color: #b2c481;
+        background-color: #09ca4a;
         color: rgb(37, 37, 37);
         box-shadow: rgba(0, 0, 0, 0.15) -2.6px -1.95px 1.95px ;
     }
@@ -82,20 +83,21 @@
 }
 
 .clean {
-    background-color: rgb(151, 30, 30);
+    background-color:#BFBFBF;
 
     &:hover{
-        background-color: rgb(245, 155, 155);
+        background-color: rgb(165, 11, 11);
     }
 }
 
 .button__close {
+    background-color: #00ffcc;
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 5;
     
     &:active{
-        background-color: #ee8b84;
+        background-color: #05c044;
     }
 }
