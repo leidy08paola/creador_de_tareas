@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/creador_de_tareas/static/css/main.52a8e880.css",
-    "main.js": "/creador_de_tareas/static/js/main.b96d8003.js",
+    "main.js": "/creador_de_tareas/static/js/main.84d7fe11.js",
     "index.html": "/creador_de_tareas/index.html",
     "main.52a8e880.css.map": "/creador_de_tareas/static/css/main.52a8e880.css.map",
-    "main.b96d8003.js.map": "/creador_de_tareas/static/js/main.b96d8003.js.map"
+    "main.84d7fe11.js.map": "/creador_de_tareas/static/js/main.84d7fe11.js.map"
   },
   "entrypoints": [
     "static/css/main.52a8e880.css",
-    "static/js/main.b96d8003.js"
+    "static/js/main.84d7fe11.js"
   ]
 }
