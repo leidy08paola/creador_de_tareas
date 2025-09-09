@@ -39,19 +39,20 @@ function AppUI() {
     <>
       {/* Fondo interactivo con archivo JSON */}
       <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        url="/particles.json"  // 👈 cargamos el JSON externo
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: -1
-        }}
-      />
+  id="tsparticles"
+  init={particlesInit}
+  loaded={particlesLoaded}
+ url={`${process.env.PUBLIC_URL}/particles.json`}
+
+  style={{
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: -1
+  }}
+/>
 
       {/* Tu app encima */}
       <TodoCounter />

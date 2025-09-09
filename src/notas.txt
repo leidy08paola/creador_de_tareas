@@ -1,3 +1,24 @@
+Intrucciones :
+1) tener la lista nuestra aplicacion para desplegar .
+
+githib pages solo despliega paginas estaticas 
+2) crear nuevo repositorio
+   
+   ouede ser atravez de la consolla o de l sitioo web
+
+3)intallar gh-pages:npm install gh-pages --save-dev   
+
+
+4)"homepage":"https://<Github Username>.githut.io/< nombre del repositorio>"
+   "predeploy": "npm rum boild"
+   "deploy": "gh-pages -d build"
+
+
+
+
+
+
+
 const [searchValue, setSearchValue]= React.useState();   // es una funcion el estado se consume y se actualiza
 el primer elemento que recibimo del array es el estdo
 el estado de react es inmutable y lo que se necesecita es una funcion controladora y actualizadora del estado 
@@ -107,7 +128,7 @@ se crea una funcion
 
 
 
-const deleteTodo = (text) => { // texto para indentificar cual todo queremos borrar
+ const deleteTodo = (text) => { // texto para indentificar cual todo queremos borrar
     const newTodos = [...todos];  // crear  nueva lista de todos
     const todoIndex = newTodos.findIndex( // identificar cual es el todo que queremos modificar
       (todo) => todo.text == text
