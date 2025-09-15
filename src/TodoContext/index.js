@@ -49,6 +49,8 @@ function TodoProvider({ children }) {
     const todoIndex = newTodos.findIndex((todo) => todo.text === text);
     newTodos[todoIndex].completed = true;
     saveTodos(newTodos);
+    console.log(`¡Todo completado!: "${text}"`); // Aquí imprimimos en la consola
+    console.log('Todos actuales:', newTodos);    // Muestra la lista actualizada
   };
 
   const deleteTodo = (text) => { // Texto para identificar cuál todo queremos borrar
@@ -58,6 +60,8 @@ function TodoProvider({ children }) {
     );
     newTodos.splice(todoIndex, 1); // Accedemos por índice y método splice manipulación de array
     saveTodos(newTodos);
+    console.log(`¡Todo completado!: "${text}"`); // Aquí imprimimos en la consola
+    console.log('Todos actuales:', newTodos);    // Muestra la lista actualizada
   };
 
   return (

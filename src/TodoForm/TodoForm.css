@@ -3,7 +3,7 @@
 
 .todo-form {
   position: fixed; /* lo hace flotar en la ventana */
-  top: 350px;      
+  top: 150px;      
   left: 28%;      
   transform: translateX(-50%); /* lo centra en su posición */
   background: #404040;

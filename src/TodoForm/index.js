@@ -26,7 +26,8 @@ function TodoForm() {
         }
         
         addTodo(newTodoValue);
-        setOpenModal(false);
+        setNewTodoValue("");
+        /*setOpenModal(false);*/
     }
     
     const onReset = (e)=>{

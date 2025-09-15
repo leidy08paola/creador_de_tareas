@@ -1,65 +1,61 @@
 .TodoItem {
   background-color: #BFBFBF; /* estilo dark */
   color: #F2F2F2;
-  position: relative;
+  position: relative; /* relativo para que los íconos internos funcionen */
   display: flex;
-  justify-content: space-between; 
+  flex-wrap: wrap; /* permite que texto largo baje y no bloquee íconos */
+  justify-content: space-between;
   align-items: center;
   margin-top: 24px;
+  margin-left: 55%;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  width: 400px;   /* ancho fijo */
-  height: 20px;   /* alto dinámico */
-  padding: 16px;  /* espacio interno */
+  width: 100%;       /* ocupa todo el contenedor */
+  max-width: 400px;  /* ancho máximo */
+  height: auto;      /* ajusta según contenido */
+  padding: 16px;
   border-radius: 12px;
   border: 2px solid #00ffcc;
-  word-wrap: break-word; /* evita que se desborde el texto */
-}
-
-
-.TodoItem-p {
-
-    flex: 1;                    /* texto ocupa el espacio sobrante */
-  margin: 0 10px;             /* espacio entre texto e íconos */
   word-wrap: break-word;
 }
+
+.TodoItem-p {
+  flex: 1;                 /* texto ocupa espacio sobrante */
+  margin: 0 10px;
+  word-wrap: break-word;
+}
+
 .TodoItem-p--complete {
-    text-decoration: line-through;
+  background-color: #268038;
+  text-decoration: line-through;
 }
 
 .Icon {
-    cursor: pointer;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    width: 48px;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
-.Icon-check {
-   cursor: pointer;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 48px;
+  width: 48px;
   font-size: 20px;
-  margin-right: 5px;  /* separación del texto */
+  font-weight: bold;
+  
 }
-.Icon-check--active {
 
-    color: #268038;
+.Icon-check {
+  font-size: 20px;
+}
+
+.Icon-check--active {
+  color: #268038;
 }
 
 .Icon-delete {
-    position: absolute;
-    top: -15px;
-    right: 0;
+  position: relative;  /* antes era absolute */
 
+  z-index: 2;          /* encima de todo dentro del item */
+  margin-left: 10px;   /* espacio a la derecha del texto */
+  cursor: pointer;
 }
 .Icon-delete:hover {
-
-    color: red;
+  color: red;
 }
-
